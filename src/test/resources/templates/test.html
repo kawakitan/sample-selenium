@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Thymeleaf</title>
+  </head>
+  <body>
+    <h1>Thymeleaf</h1>
+    <dl>
+      <dt>id</dt>
+      <dd th:text="${db.id}"></dd>
+ 
+      <dt>title</dt>
+      <dd th:text="${db.title}"></dd>
+ 
+      <dt>count</dt>
+      <dd th:text="${db.count}"></dd>
+    </dl>
+  </body>
+</html>
