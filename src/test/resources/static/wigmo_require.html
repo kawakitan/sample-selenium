@@ -1,0 +1,38 @@
+<!DOCTYPE HTML>
+<HTML>
+<head>
+
+<!--Theme-->
+<link href="http://cdn.wijmo.com/themes/aristo/jquery-wijmo.css" rel="stylesheet" type="text/css" />
+<!--Wijmo Widgets CSS-->
+<link href="http://cdn.wijmo.com/jquery.wijmo-pro.all.3.20173.128.min.css" rel="stylesheet" type="text/css" />
+
+<!--RequireJs-->
+<script type="text/javascript" src="http://cdn.wijmo.com/external/require.js"></script>
+
+<script type="text/javascript">
+    requirejs.config({
+        baseUrl: "http://cdn.wijmo.com/amd-js/3.20173.128",
+            paths: {
+                "jquery": "jquery-1.11.1.min",
+                "jquery-ui": "jquery-ui-1.11.0.custom.min",
+                "jquery.ui": "jquery-ui",
+                "jquery.mousewheel": "jquery.mousewheel.min",
+                "globalize": "globalize.min"
+            }
+    });
+</script>
+<script id="scriptInit" type="text/javascript">
+    require(["wijmo.wijcalendar"], function () {
+        $(document).ready(function () {
+            $("#calendar1").wijcalendar(
+                { easing: "easeOutExpo" }
+            );
+        });
+    });
+</script>
+</head>
+<body>
+  <div id="calendar1"></div>
+</body>
+</HTML>
