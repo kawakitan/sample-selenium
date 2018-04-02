@@ -6,41 +6,37 @@
 <body>
 	<form>
 		<table>
-			<thead>
-				<tr>
-					<th>Name</th>
-					<th>Component</th>
-				</tr>
-			</thead>
 			<tbody>
 				<tr>
-					<td>Text</td>
-					<td><input type="text" /></td>
+					<th>名前</th>
+					<td><input id="txtName" name="name" type="text" value="なまえ"/></td>
 				</tr>
 				<tr>
-					<td>Textarea</td>
-					<td><textarea></textarea></td>
+					<th>パスワード</th>
+					<td><input id="txtPass" name="pass" type="password" value="123"/></td>
 				</tr>
 				<tr>
-					<td>Password</td>
-					<td><input type="password" /></td>
-				</tr>
-				<tr>
-					<td>Checkbox</td>
-					<td><input type="checkbox" /></td>
-				</tr>
-				<tr>
-					<td>Radio</td>
+					<th>性別</th>
 					<td>
-						<input type="radio" name="" /><br/>
+						<input id="rdoM" name="sex" type="radio" value="M" checked="checked" /><label for="rdoM">男性</label>
+						<input id="rdoW" name="sex" type="radio" value="W" /><label for="rdoW">女性</label>
+						<input id="rdoE" name="sex" type="radio" value="E" /><label for="rdoE">その他</label>
 					</td>
 				</tr>
 				<tr>
-					<td>File</td>
-					<td><input type="file" /></td>
+					<th>めも</th>
+					<td><textarea id="txtMemo" name="memo">あいうえお</textarea></td>
 				</tr>
 				<tr>
-					<td>Select</td>
+					<th>OS</th>
+					<td>
+						<input id="chkWin" name="os" type="checkbox" value="win" checked="checked"/><label for="chkWin">Windows</label>
+						<input id="chkMac" name="os" type="checkbox" value="mac" /><label for="chkMac">Mac</label>
+						<input id="chkLnx" name="os" type="checkbox" value="lnx" /><label for="chkLnx">Linux</label>
+					</td>
+				</tr>
+				<tr>
+					<th>Select</th>
 					<td><select name="">
 							<option value=""></option>
 							<option value=""></option>
@@ -48,31 +44,35 @@
 					</select></td>
 				</tr>
 				<tr>
-					<td>Hidden</td>
+					<th>File</th>
+					<td><input type="file" /></td>
+				</tr>
+				<tr>
+					<th>Hidden</th>
 					<td><input type="hidden" /></td>
 				</tr>
 				<tr>
-					<td>Submit</td>
+					<th>Submit</th>
 					<td><input type="submit" /></td>
 				</tr>
 				<tr>
-					<td>Reset</td>
+					<th>Reset</th>
 					<td><input type="reset" /></td>
 				</tr>
 				<tr>
-					<td>Button</td>
+					<th>Button</th>
 					<td><input type="button" value="Click" /></td>
 				</tr>
 				<tr>
-					<td>Button</td>
+					<th>Button</th>
 					<td><button type="button">Click</button></td>
 				</tr>
 				<tr>
-					<td>Label</td>
+					<th>Label</th>
 					<td><label>ラベル</label></td>
 				</tr>
 				<tr>
-					<td></td>
+					<td>Image</td>
 					<td><input type="image" /></td>
 				</tr>
 			</tbody>
